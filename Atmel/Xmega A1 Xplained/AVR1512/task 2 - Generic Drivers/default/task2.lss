@@ -1,0 +1,287 @@
+
+task2.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000280  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000000  00802000  00000280  00000314  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000001  00802000  00802000  00000314  2**0
+                  ALLOC
+  3 .stab         00000714  00000000  00000000  00000314  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  4 .stabstr      00000097  00000000  00000000  00000a28  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .comment      0000002f  00000000  00000000  00000abf  2**0
+                  CONTENTS, READONLY
+  6 .debug_aranges 00000030  00000000  00000000  00000aee  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_info   00000411  00000000  00000000  00000b1e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_abbrev 0000016f  00000000  00000000  00000f2f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_line   000001d5  00000000  00000000  0000109e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_frame  00000044  00000000  00000000  00001274  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_str    000002ed  00000000  00000000  000012b8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_loc    00000028  00000000  00000000  000015a5  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_ranges 00000050  00000000  00000000  000015cd  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 fa 00 	jmp	0x1f4	; 0x1f4 <__ctors_end>
+   4:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+   8:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+   c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  10:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  14:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  18:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  1c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  20:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  24:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  28:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  2c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  30:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  34:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  38:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  3c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  40:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  44:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  48:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  4c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  50:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  54:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  58:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  5c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  60:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  64:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  68:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  6c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  70:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  74:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  78:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  7c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  80:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  84:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  88:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  8c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  90:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  94:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  98:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  9c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  a0:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  a4:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  a8:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  ac:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  b0:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  b4:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  b8:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  bc:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  c0:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  c4:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  c8:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  cc:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  d0:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  d4:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  d8:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  dc:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  e0:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  e4:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  e8:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  ec:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  f0:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  f4:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  f8:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+  fc:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 100:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 104:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 108:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 10c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 110:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 114:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 118:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 11c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 120:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 124:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 128:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 12c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 130:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 134:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 138:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 13c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 140:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 144:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 148:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 14c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 150:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 154:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 158:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 15c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 160:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 164:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 168:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 16c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 170:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 174:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 178:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 17c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 180:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 184:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 188:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 18c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 190:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 194:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 198:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 19c:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1a0:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1a4:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1a8:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1ac:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1b0:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1b4:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1b8:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1bc:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1c0:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1c4:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1c8:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1cc:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1d0:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1d4:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1d8:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1dc:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1e0:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1e4:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1e8:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1ec:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+ 1f0:	0c 94 12 01 	jmp	0x224	; 0x224 <__bad_interrupt>
+
+000001f4 <__ctors_end>:
+ 1f4:	11 24       	eor	r1, r1
+ 1f6:	1f be       	out	0x3f, r1	; 63
+ 1f8:	cf ef       	ldi	r28, 0xFF	; 255
+ 1fa:	df e3       	ldi	r29, 0x3F	; 63
+ 1fc:	de bf       	out	0x3e, r29	; 62
+ 1fe:	cd bf       	out	0x3d, r28	; 61
+ 200:	00 e0       	ldi	r16, 0x00	; 0
+ 202:	0c bf       	out	0x3c, r16	; 60
+ 204:	18 be       	out	0x38, r1	; 56
+ 206:	19 be       	out	0x39, r1	; 57
+ 208:	1a be       	out	0x3a, r1	; 58
+ 20a:	1b be       	out	0x3b, r1	; 59
+
+0000020c <__do_clear_bss>:
+ 20c:	20 e2       	ldi	r18, 0x20	; 32
+ 20e:	a0 e0       	ldi	r26, 0x00	; 0
+ 210:	b0 e2       	ldi	r27, 0x20	; 32
+ 212:	01 c0       	rjmp	.+2      	; 0x216 <.do_clear_bss_start>
+
+00000214 <.do_clear_bss_loop>:
+ 214:	1d 92       	st	X+, r1
+
+00000216 <.do_clear_bss_start>:
+ 216:	a1 30       	cpi	r26, 0x01	; 1
+ 218:	b2 07       	cpc	r27, r18
+ 21a:	e1 f7       	brne	.-8      	; 0x214 <.do_clear_bss_loop>
+ 21c:	0e 94 14 01 	call	0x228	; 0x228 <main>
+ 220:	0c 94 3e 01 	jmp	0x27c	; 0x27c <_exit>
+
+00000224 <__bad_interrupt>:
+ 224:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000228 <main>:
+	PORT_t * ledPort = &LEDPORT;
+	PORT_t * switchPortL = &SWITCHPORTL;
+	PORT_t * switchPortH = &SWITCHPORTH;
+
+	// Enable pullups for switches. MPCMASK will be explained in task 4.
+	PORTCFG.MPCMASK = SWITCHPORTL_MASK_gc;
+ 228:	8f e3       	ldi	r24, 0x3F	; 63
+ 22a:	80 93 b0 00 	sts	0x00B0, r24
+	switchPortL->PIN0CTRL = PORT_OPC_PULLUP_gc;
+ 22e:	88 e1       	ldi	r24, 0x18	; 24
+ 230:	80 93 70 06 	sts	0x0670, r24
+	
+	PORTCFG.MPCMASK = SWITCHPORTH_MASK_gc;
+ 234:	93 e0       	ldi	r25, 0x03	; 3
+ 236:	90 93 b0 00 	sts	0x00B0, r25
+	switchPortH->PIN6CTRL = PORT_OPC_PULLUP_gc;
+ 23a:	80 93 f6 07 	sts	0x07F6, r24
+// modules have similar internal register layout (same goes for ADCs,
+// DACs, Timer/Counters etc)
+
+void SetLEDs( PORT_t * ledPort, unsigned char out )
+{
+	ledPort->DIR = 0xff; // Make sure all pins are outputs.
+ 23e:	3f ef       	ldi	r19, 0xFF	; 255
+
+// Same method used on this function, but now for reading
+// input values from an IO port.
+unsigned char GetSwitches( PORT_t * switchPort, char mask )
+{
+	switchPort->DIR &= mask; // Make sure used pins are inputs.
+ 240:	80 91 60 06 	lds	r24, 0x0660
+ 244:	8f 73       	andi	r24, 0x3F	; 63
+ 246:	80 93 60 06 	sts	0x0660, r24
+	return switchPort->IN & mask; // Read value, mask out unused pins and return.
+ 24a:	20 91 68 06 	lds	r18, 0x0668
+
+// Same method used on this function, but now for reading
+// input values from an IO port.
+unsigned char GetSwitches( PORT_t * switchPort, char mask )
+{
+	switchPort->DIR &= mask; // Make sure used pins are inputs.
+ 24e:	80 91 e0 07 	lds	r24, 0x07E0
+ 252:	83 70       	andi	r24, 0x03	; 3
+ 254:	80 93 e0 07 	sts	0x07E0, r24
+	return switchPort->IN & mask; // Read value, mask out unused pins and return.
+ 258:	80 91 e8 07 	lds	r24, 0x07E8
+ 25c:	83 70       	andi	r24, 0x03	; 3
+	// Now copy switch state to LEDs again and again and again...
+	// Because the switches are split between two ports on the XMEGA-A1 Xplained board
+	// the value statement combines bits from each port and arranges them in the right order.
+	while(1) 
+    {
+		value = GetSwitches( switchPortL, SWITCHPORTL_MASK_gc ) | (GetSwitches( switchPortH, SWITCHPORTH_MASK_gc ) << SWITCHPORTH_OFFSET);
+ 25e:	40 e4       	ldi	r20, 0x40	; 64
+ 260:	84 9f       	mul	r24, r20
+ 262:	c0 01       	movw	r24, r0
+ 264:	11 24       	eor	r1, r1
+// Same method used on this function, but now for reading
+// input values from an IO port.
+unsigned char GetSwitches( PORT_t * switchPort, char mask )
+{
+	switchPort->DIR &= mask; // Make sure used pins are inputs.
+	return switchPort->IN & mask; // Read value, mask out unused pins and return.
+ 266:	2f 73       	andi	r18, 0x3F	; 63
+	// Now copy switch state to LEDs again and again and again...
+	// Because the switches are split between two ports on the XMEGA-A1 Xplained board
+	// the value statement combines bits from each port and arranges them in the right order.
+	while(1) 
+    {
+		value = GetSwitches( switchPortL, SWITCHPORTL_MASK_gc ) | (GetSwitches( switchPortH, SWITCHPORTH_MASK_gc ) << SWITCHPORTH_OFFSET);
+ 268:	28 2b       	or	r18, r24
+ 26a:	20 93 00 20 	sts	0x2000, r18
+		SetLEDs( ledPort, value );
+ 26e:	80 91 00 20 	lds	r24, 0x2000
+// modules have similar internal register layout (same goes for ADCs,
+// DACs, Timer/Counters etc)
+
+void SetLEDs( PORT_t * ledPort, unsigned char out )
+{
+	ledPort->DIR = 0xff; // Make sure all pins are outputs.
+ 272:	30 93 80 06 	sts	0x0680, r19
+	ledPort->OUT = out; // Output requested value.
+ 276:	80 93 84 06 	sts	0x0684, r24
+ 27a:	e2 cf       	rjmp	.-60     	; 0x240 <main+0x18>
+
+0000027c <_exit>:
+ 27c:	f8 94       	cli
+
+0000027e <__stop_program>:
+ 27e:	ff cf       	rjmp	.-2      	; 0x27e <__stop_program>
